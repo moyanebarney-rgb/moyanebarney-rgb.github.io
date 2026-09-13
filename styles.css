@@ -2,28 +2,28 @@
    DESIGN TOKENS
    ========================================= */
 :root {
-  --ink:         #15191d;
-  --ink-soft:    #30373b;
-  --ink-muted:   #555c60;
-  --ink-faint:   #777d80;
+  --ink: #15191d;
+  --ink-soft: #30373b;
+  --ink-muted: #555c60;
+  --ink-faint: #777d80;
 
-  --blue:        #233f5f;
-  --blue-dark:   #182e46;
+  --blue: #233f5f;
+  --blue-dark: #182e46;
   --blue-darker: #101f30;
 
-  --gold:        #b89650;
+  --gold: #b89650;
 
-  --paper:       #fbfbfa;
-  --white:       #ffffff;
-  --muted:       #f1f2f1;
-  --line:        #d9dcde;
-  --soft-line:   #e7e8e8;
+  --paper: #fbfbfa;
+  --white: #ffffff;
+  --muted: #f1f2f1;
+  --line: #d9dcde;
+  --soft-line: #e7e8e8;
 
-  --serif:       "Playfair Display", Georgia, "Times New Roman", serif;
-  --sans:        "Helvetica Neue", Arial, Helvetica, sans-serif;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Arial, Helvetica, sans-serif;
 
-  --max-width:   1500px;
-  --gutter:      6vw;
+  --max-width: 1500px;
+  --gutter: 6vw;
 }
 
 /* =========================================
@@ -53,6 +53,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -81,6 +82,7 @@ button:focus-visible {
   text-decoration: none;
   font-size: 0.85rem;
 }
+
 .skip-link:focus {
   left: 12px;
   top: 12px;
@@ -112,6 +114,7 @@ button:focus-visible {
   text-decoration: none;
   transition: color 0.15s ease;
 }
+
 .logo:hover {
   color: var(--blue-dark);
 }
@@ -132,6 +135,7 @@ button:focus-visible {
   font-weight: 700;
   transition: opacity 0.15s ease;
 }
+
 .nav-link:hover {
   text-decoration: underline;
 }
@@ -155,6 +159,7 @@ button:focus-visible {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
 .hero-index span:first-child {
   color: var(--gold);
   font-weight: 700;
@@ -188,6 +193,7 @@ h1 {
   font-size: clamp(3.4rem, 9vw, 9rem);
   letter-spacing: -0.045em;
 }
+
 h1 em {
   color: var(--blue);
   font-style: italic;
@@ -220,6 +226,7 @@ h1 em {
   letter-spacing: 0.02em;
   transition: background 0.15s ease;
 }
+
 .button:hover {
   background: var(--blue-dark);
 }
@@ -230,6 +237,7 @@ h1 em {
   text-decoration: none;
   transition: color 0.15s ease;
 }
+
 .quiet-link:hover {
   color: var(--blue);
 }
@@ -264,6 +272,7 @@ h1 em {
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
+
 .section-label span:first-child {
   color: var(--gold);
 }
@@ -288,6 +297,7 @@ h1 em {
   letter-spacing: -0.025em;
   color: var(--ink);
 }
+
 .large-statement strong {
   color: var(--blue);
   font-weight: 400;
@@ -355,6 +365,7 @@ h1 em {
   gap: 8px;
   margin-top: 28px;
 }
+
 .tags span {
   padding: 5px 10px;
   border: 1px solid var(--line);
@@ -375,11 +386,13 @@ h1 em {
   gap: 40px;
   margin-bottom: 80px;
 }
+
 .work-intro h2 {
   margin: 0;
   font-size: clamp(2.6rem, 6vw, 5.5rem);
   letter-spacing: -0.035em;
 }
+
 .work-intro p {
   max-width: 430px;
   color: var(--ink-muted);
@@ -441,6 +454,7 @@ h1 em {
   max-width: 950px;
   margin-bottom: 80px;
 }
+
 .method-heading h2 {
   margin: 0;
   font-size: clamp(2.6rem, 7vw, 6.5rem);
@@ -452,13 +466,16 @@ h1 em {
   grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--line);
 }
+
 .method-grid > div {
   padding: 28px 24px 0 0;
   border-right: 1px solid var(--line);
 }
+
 .method-grid > div:not(:first-child) {
   padding-left: 24px;
 }
+
 .method-grid > div:last-child {
   border-right: 0;
 }
@@ -468,10 +485,12 @@ h1 em {
   font-size: 0.7rem;
   font-weight: 700;
 }
+
 .method-grid h3 {
   margin: 25px 0 12px;
   font-size: 1.8rem;
 }
+
 .method-grid p {
   color: var(--ink-muted);
 }
@@ -492,6 +511,7 @@ h1 em {
   font-size: clamp(2.6rem, 6vw, 5.5rem);
   letter-spacing: -0.04em;
 }
+
 .about h2 em {
   color: var(--blue);
   font-style: italic;
@@ -500,12 +520,14 @@ h1 em {
 .about-copy {
   max-width: 600px;
 }
+
 .large-copy {
   margin-top: 0;
   font-size: 1.3rem;
   line-height: 1.55;
   color: var(--ink-soft);
 }
+
 .about-copy p:not(.large-copy) {
   color: var(--ink-muted);
 }
@@ -524,6 +546,7 @@ h1 em {
 .contact .section-label {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .contact .section-label span:first-child {
   color: var(--gold);
 }
@@ -563,6 +586,7 @@ h1 em {
   font-size: 0.9rem;
   transition: background 0.15s ease, color 0.15s ease;
 }
+
 .contact-button:hover {
   background: var(--gold);
   color: var(--ink);
@@ -575,6 +599,7 @@ h1 em {
   font-weight: 700;
   transition: opacity 0.15s ease;
 }
+
 .linkedin:hover {
   text-decoration: underline;
 }
@@ -592,12 +617,14 @@ footer {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
 .footer-left,
 .footer-right {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .footer-left strong {
   color: var(--white);
   letter-spacing: 0.12em;
@@ -689,6 +716,7 @@ footer {
   .work-intro {
     margin-bottom: 55px;
   }
+
   .work-intro h2 {
     font-size: 3rem;
     margin-bottom: 25px;
@@ -697,6 +725,7 @@ footer {
   .case {
     padding: 38px 0;
   }
+
   .case h3 {
     font-size: 2.2rem;
   }
@@ -704,6 +733,7 @@ footer {
   .method-heading {
     margin-bottom: 55px;
   }
+
   .method-heading h2 {
     font-size: 3rem;
   }
@@ -711,12 +741,14 @@ footer {
   .method-grid {
     display: block;
   }
+
   .method-grid > div,
   .method-grid > div:not(:first-child) {
     padding: 28px 0;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
+
   .method-grid > div:last-child {
     border-bottom: 0;
   }
@@ -724,6 +756,7 @@ footer {
   .about-grid {
     gap: 45px;
   }
+
   .about h2 {
     font-size: 3.2rem;
     margin-bottom: 40px;
@@ -732,6 +765,7 @@ footer {
   .contact {
     padding: 90px var(--gutter);
   }
+
   .contact h2 {
     font-size: 3.4rem;
   }
@@ -740,7 +774,9 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contact-button {
+    max-width: 100%;
     word-break: break-word;
   }
 
@@ -749,6 +785,7 @@ footer {
     align-items: flex-start;
     gap: 20px;
   }
+
   .footer-left,
   .footer-right {
     flex-direction: column;
@@ -764,8 +801,11 @@ footer {
   html {
     scroll-behavior: auto;
   }
-  * {
+
+  *,
+  *::before,
+  *::after {
     transition: none !important;
     animation: none !important;
   }
-    }
+   }
